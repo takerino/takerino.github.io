@@ -1,37 +1,64 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Welcome on MOTOPRO.com</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link rel="stylesheet" type="text/css" href="../css/menu.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="icon/audi.ico">
+</head>
+<body>
 
-You can use the [editor on GitHub](https://github.com/takerino/takerino.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+	<header>
+		
+		<div class="motopro">
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+			<a href="index.html">Motopro.com</a>
+			
+		</div>
 
-### Markdown
+		<div class="menuBar">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+		<nav class="menu" style="background-color: black">
+			<ul >
+				<li><a href="html/audi.html" class="audi">Audi</a></li>
+				<li><a href="html/bmw.html" class="bmw">BMW</a></li>
+				<li><a href="html/mercedes.html" class="mercedes">Mercedes</a></li>
+				<li><a href="html/chev.html" class="tesla">Chevrolet</a></li>
+			</ul>
+		</nav>
+			
+	</header>
+	
+	<slider>
+		<slide><a href="#">Audi</a></slide>
+		<slide><a href="#">BMW</a></slide>
+		<slide><a href="#">Mercedes</a></slide>
+		<slide><a href="#">Chevrolet</a></slide>
 
-```markdown
-Syntax highlighted code block
+	</slider>
 
-# Header 1
-## Header 2
-### Header 3
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.menuBar').click(function(){
+				$('.menu').toggleClass('active');
+			})
+		})
+	</script>
 
-- Bulleted
-- List
+	<footer>
+		&copy;
+	</footer>
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/takerino/takerino.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</body>
+</html>
