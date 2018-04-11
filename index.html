@@ -1,14 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Welcome on MOTOPRO.com</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta property="og:url"                content="https://takerino.github.io/index.html"/>
+	<meta property="og:type"               content="article"/>
+	<meta property="og:title"              content="Motopro - website for a general knowledge about sportcars" />
+	<meta property="og:description"        content="Do you like sportcars and want to get more information about them?" />
+	<meta property="og:image"              content="https://takerino.github.io/assets/img/og_img.jpg" />
+	<meta>
+	<meta>
+	<meta>
+	<meta>
+	<meta>
+	<meta>
+	<meta>
+	<meta>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/menu.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/icon/audi.ico">
 </head>
 <body>
 
@@ -16,7 +30,7 @@
 		
 		<div class="motopro">
 
-			Motopro.com
+			<a href="index.html">Motopro.com</a>
 			
 		</div>
 
@@ -26,31 +40,37 @@
 				<div class="line3"></div>
 			</div>
 
-		<nav class="menu">
-			
-
-			<ul>
-				<li><a href="#">Audi</a></li>
-				<li><a href="#">BMW</a></li>
-				<li><a href="#">Mercedes</a></li>
-				<li><a href="#">Tesla</a></li>
+		<nav class="menu" style="background-color: black">
+			<ul >
+				<li><a href="assets/html/audi.html" class="audi">Audi</a></li>
+				<li><a href="assets/html/bmw.html" class="bmw">BMW</a></li>
+				<li><a href="assets/html/mercedes.html" class="mercedes">Mercedes</a></li>
+				<li><a href="assets/html/chev.html" class="chev">Chevrolet</a></li>
 			</ul>
 		</nav>
 			
 	</header>
-
+	
 	<slider>
-		<slide><a href="#">Audi</a></slide>
-		<slide><a href="#">BMW</a></slide>
-		<slide><a href="#">Mercedes</a></slide>
-		<slide><a href="#">Tesla</a></slide>
+		<slide><a href="assets/html/audi.html">Audi</a></slide>
+		<slide><a href="assets/html/bmw.html">BMW</a></slide>
+		<slide><a href="assets/html/mercedes.html">Mercedes</a></slide>
+		<slide><a href="assets/html/chev.html">Chevrolet</a></slide>
 
 	</slider>
 
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.menuBar').click(function(){
+				$('.menu').toggleClass('active');
+			})
+		})
+	</script>
 
-
-
-
+	<footer>
+		&copy;
+	</footer>
 
 
 </body>
