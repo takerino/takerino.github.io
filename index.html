@@ -8,18 +8,14 @@
 	<meta property="og:title"              content="Motopro - website for a general knowledge about sportcars" />
 	<meta property="og:description"        content="Do you like sportcars and want to get more information about them?" />
 	<meta property="og:image"              content="https://takerino.github.io/assets/img/og_img.jpg" />
-	<meta>
-	<meta>
-	<meta>
-	<meta>
-	<meta>
-	<meta>
-	<meta>
-	<meta>
+	<meta name=”keywords” content=”motosport, cars, audi, mercedes, bmw, chevrolet, cla 45, camaro, m6, rs ”>
+	<meta name=”description” content=”Wanna to know some basics about motosport? Audi, BMW, Mercedes and Chevrolet? ”>
+
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/menu.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/slider.css">
+	
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="assets/icon/audi.ico">
@@ -34,7 +30,7 @@
 			
 		</div>
 
-		<div class="menuBar">
+		<div class="menuBar" onclick="myFunction(this)">
 				<div class="line1"></div>
 				<div class="line2"></div>
 				<div class="line3"></div>
@@ -66,6 +62,11 @@
 				$('.menu').toggleClass('active');
 			})
 		})
+
+		function myFunction(x) {
+			x.classList.toggle("change");
+
+		}
 	</script>
 
 	<footer>
